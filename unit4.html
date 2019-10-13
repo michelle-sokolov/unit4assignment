@@ -1,1 +1,44 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="unit4.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+</head> 
+<body>
+<div class="header">
+     <h1><center>Very Difficult Javascript Test</center></h1>
+</div>
+    <div id="container">
+        <div id="highscore"></div>
+        <div id="start"><center><button type="button" class="btn btn-primary btn-lg">Start Quiz!</button></center></div>
+        <div id="quiz" style="display: none">
+            <br><br>
+            <center><button type="button" class="btn btn-primary btn-lg btn-block"><div id="question"></div></center></button>
+            <div id="choices">
+                <br>
+                <button type="button" class="btn btn-primary"><div class="choice" id="A" onclick="checkAnswer('A')"></div></button>
+               <br><br>
+               <button type="button" class="btn btn-primary"><div class="choice" id="B" onclick="checkAnswer('B')"></div></button>
+               <br><br>
+               <button type="button" class="btn btn-primary"><div class="choice" id="C" onclick="checkAnswer('C')"></div></button>
+               <br><br>
+               <button type="button" class="btn btn-primary"><div class="choice" id="D" onclick="checkAnswer('D')"></div></button>
+               <br>
+               <br>
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="progress"></div>
+        </div>
+        <div id="scoreContainer" style="display: none"></div>
+    </div>
+    <footer id="footer">
+        </footer>
+    <script src="questions.js"></script>
+</body>
+</html>
